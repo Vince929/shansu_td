@@ -69,7 +69,7 @@ Page({
       const { fileList } = await wx.cloud.getTempFileURL({
         fileList: [
           {
-            fileID: 'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/home/haibao2.jpeg',
+            fileID: 'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/home/haibao-4.jpeg',
             maxAge: 31536000,
           },
         ],
@@ -85,7 +85,7 @@ Page({
 
   onPosterLoad() {
     this.setData({
-      posterLoaded: true
+      posterLoaded: true,
     });
   },
 
@@ -108,7 +108,7 @@ Page({
   },
 
   downloadFile(e) {
-    const index = e.currentTarget.dataset.index;
+    const { index } = e.currentTarget.dataset;
     const file = this.data.files[index];
 
     wx.showLoading({
@@ -122,7 +122,7 @@ Page({
         const filePath = res.tempFilePath;
         wx.openDocument({
           filePath: filePath,
-          success: function (res) {
+          success: function () {
             console.log('打开文档成功');
           },
           fail: function (error) {
