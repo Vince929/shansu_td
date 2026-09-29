@@ -20,60 +20,33 @@ Page({
     ]
   },
 
-  async onLoad() {
-    try {
-      const { fileList } = await wx.cloud.getTempFileURL({
-        fileList: [
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/灵洲村/main-title.jpg',
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/大唐/main-title.jpg',
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/石歧/main-title.jpg',
-        ],
-      });
-
-      this.setData({
-        locationList: [
-          {
-            id: 1,
-            title: '清远市石角镇灵洲村山苏种植基地',
-            description: '占地约180亩，清远市乡村振兴示范基地',
-            image: fileList[0].tempFileURL,
-            imageLoaded: false
-          },
-          {
-            id: 2,
-            title: '佛山市三水区育苗基地',
-            description: '育苗基地，现存30万+颗苗，总投资400万+',
-            image: fileList[1].tempFileURL,
-            imageLoaded: false
-          },
-          {
-            id: 3,
-            title: '石歧村-初代山苏基地',
-            description: '全国大陆内地第一个山苏种植基地',
-            image: fileList[2].tempFileURL,
-            imageLoaded: false
-          },
-        ],
-      });
-    } catch (error) {
-      console.error('获取图片链接失败：', error);
-      wx.showToast({
-        title: '加载失败',
-        icon: 'error',
-      });
-    }
-
-    // 获取名片头像
-    const { fileList: avatarList } = await wx.cloud.getTempFileURL({
-      fileList: [
-        'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/fuzeren.jpg',
-        'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/shansu5.jpg',
-      ],
-    });
-
+  onLoad() {
     this.setData({
-      'cardInfo[0].avatar': avatarList[0].tempFileURL,
-      'cardInfo[1].avatar': avatarList[1].tempFileURL,
+      locationList: [
+        {
+          id: 1,
+          title: '清远市石角镇灵洲村山苏种植基地',
+          description: '占地约180亩，清远市乡村振兴示范基地',
+          image: 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/灵洲村/main-title.jpg',
+          imageLoaded: false,
+        },
+        {
+          id: 2,
+          title: '佛山市三水区育苗基地',
+          description: '育苗基地，现存30万+颗苗，总投资400万+',
+          image: 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/大唐/main-title.jpg',
+          imageLoaded: false,
+        },
+        {
+          id: 3,
+          title: '石歧村-初代山苏基地',
+          description: '全国大陆内地第一个山苏种植基地',
+          image: 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/石歧/main-title.jpg',
+          imageLoaded: false,
+        },
+      ],
+      'cardInfo[0].avatar': 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/fuzeren.jpg',
+      'cardInfo[1].avatar': 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/shansu5.jpg',
     });
   },
 

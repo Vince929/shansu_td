@@ -6,10 +6,10 @@ Page({
         title: '山苏茶',
         description: '山苏茶具有清香怡人的口感，富含多种维生素和矿物质，是一款健康养生的天然饮品。',
         images: [
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/home/fujia/shansucha/shansucha1.jpg',
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/home/fujia/shansucha/shansucha2.jpg',
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/home/fujia/shansucha/shansucha3.jpg',
-        ].map(fileID => ({ fileID, url: '', loaded: false })),
+          'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/home/fujia/shansucha/shansucha1.jpg',
+          'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/home/fujia/shansucha/shansucha2.jpg',
+          'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/home/fujia/shansucha/shansucha3.jpg',
+        ].map(url => ({ url, loaded: false })),
         details: [
           '营养价值：富含维生素C、维生素E、钾、镁等多种营养物质',
           '功效：具有清热解暑、提神醒脑的功效',
@@ -22,10 +22,10 @@ Page({
         title: '山苏盆景',
         description: '山苏盆景造型优美，具有很高的观赏价值，是室内装饰的理想选择。',
         images: [
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/home/fujia/pengjing/1.jpg',
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/home/fujia/pengjing/2.jpg',
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/home/fujia/pengjing/3.jpg',
-        ].map(fileID => ({ fileID, url: '', loaded: false })),
+          'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/home/fujia/pengjing/1.jpg',
+          'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/home/fujia/pengjing/2.jpg',
+          'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/home/fujia/pengjing/3.jpg',
+        ].map(url => ({ url, loaded: false })),
         details: [
           '艺术价值：融合传统盆景艺术与山苏植物特色',
           '观赏特点：四季常青，造型优美',
@@ -35,33 +35,6 @@ Page({
         isExpanded: true
       }
     },
-  },
-
-  onLoad() {
-    this.loadImages('tea');
-    this.loadImages('bonsai');
-  },
-
-  async loadImages(type) {
-    const images = this.data.products[type].images;
-    const fileList = images.map(item => item.fileID);
-    
-    try {
-      const result = await wx.cloud.getTempFileURL({
-        fileList: fileList
-      });
-      
-      const updatedImages = images.map((item, index) => ({
-        ...item,
-        url: result.fileList[index].tempFileURL
-      }));
-
-      this.setData({
-        [`products.${type}.images`]: updatedImages
-      });
-    } catch (error) {
-      console.error('获取图片链接失败：', error);
-    }
   },
 
   onTabChange(e) {

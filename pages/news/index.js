@@ -9,66 +9,56 @@ Page({
       {
         id: 0,
         title: '惊喜！高端特色农业项目落户饶平上饶镇——饶平县上饶镇山苏种植基地举行开种仪式',
-        cloudPath: 'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/news1.jpg',
+        cloudPath: 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/news1.jpg',
         pdfUrl:
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/others/惊喜！高端特色农业项目落户饶平上饶镇——饶平县上饶镇山苏种植基地举行开种仪式.pdf',
+          'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/others/惊喜！高端特色农业项目落户饶平上饶镇——饶平县上饶镇山苏种植基地举行开种仪式.pdf',
         date: '2025-02-27',
         views: 5149
       },
       {
         id: 1,
         title: '上饶镇驻镇帮镇扶村工作队工作简报（2025年第7期）',
-        cloudPath: 'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/news1.jpg',
+        cloudPath: 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/news1.jpg',
         pdfUrl:
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/others/上饶镇驻镇帮镇扶村工作队工作简报（2025年第7期）.pdf',
+          'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/others/上饶镇驻镇帮镇扶村工作队工作简报（2025年第7期）.pdf',
         date: '2025-02-27',
         views: 3049,
       },
       {
         id: 2,
         title: '清远市清城区石角镇：蔬菜采收忙 农户喜洋洋',
-        cloudPath: 'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/shansu6.jpg',
+        cloudPath: 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/shansu6.jpg',
         pdfUrl:
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/others/清远市清城区石角镇：蔬菜采收忙 农户喜洋洋.pdf',
+          'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/others/清远市清城区石角镇：蔬菜采收忙 农户喜洋洋.pdf',
         date: '2023-12-08',
         views: 235,
       },
       {
         id: 3,
         title: '龙南：台湾"山苏花"开"致富花"',
-        cloudPath: 'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/longnanfuguihua.png',
+        cloudPath: 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/longnanfuguihua.png',
         pdfUrl:
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/others/龙南：台湾"山苏花"开"致富花".pdf',
+          'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/others/龙南：台湾"山苏花"开"致富花".pdf',
         date: '2020-09-16',
         views: 2794,
       },
       {
         id: 4,
         title: '新型食用蔬菜鸟巢蕨嫩叶营养成分检测_徐诗涛',
-        cloudPath: 'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/shansu7.jpg',
+        cloudPath: 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/shansu7.jpg',
         pdfUrl:
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/others/新型食用蔬菜鸟巢蕨嫩叶营养成分检测_徐诗涛.pdf',
+          'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/others/新型食用蔬菜鸟巢蕨嫩叶营养成分检测_徐诗涛.pdf',
         date: '2012-01-01',
         views: 1879,
       },
     ];
 
-    // 获取真实URL
-    try {
-      const result = await wx.cloud.getTempFileURL({
-        fileList: newsData.map((item) => item.cloudPath),
-      });
+    const newsList = newsData.map((item) => ({
+      ...item,
+      image: item.cloudPath,
+    }));
 
-      // 将真实URL添加到新闻数据中
-      const newsList = newsData.map((item, index) => ({
-        ...item,
-        image: result.fileList[index].tempFileURL,
-      }));
-
-      this.setData({ newsList });
-    } catch (error) {
-      console.error('获取图片链接失败：', error);
-    }
+    this.setData({ newsList });
   },
 
   async onNewsClick(e) {
@@ -91,8 +81,8 @@ Page({
       });
 
       // 下载PDF文件
-      const res = await wx.cloud.downloadFile({
-        fileID: newsItem.pdfUrl,
+      const res = await wx.downloadFile({
+        url: newsItem.pdfUrl,
       });
 
       if (!res.tempFilePath) {

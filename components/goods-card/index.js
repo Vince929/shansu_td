@@ -71,17 +71,9 @@ Component({
   lifetimes: {
     ready() {
       this.init();
-      wx.cloud.getTempFileURL({
-        fileList: [
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/fuzeren.jpg',
-          'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/shansu5.jpg',
-        ],
-        success: (res) => {
-          this.setData({
-            'cardInfo[0].avatar': res.fileList[0].tempFileURL,
-            'cardInfo[1].avatar': res.fileList[1].tempFileURL,
-          });
-        },
+      this.setData({
+        'cardInfo[0].avatar': 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/fuzeren.jpg',
+        'cardInfo[1].avatar': 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/shansu5.jpg',
       });
     },
     detached() {

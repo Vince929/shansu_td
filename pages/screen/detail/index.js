@@ -26,11 +26,11 @@ Page({
             name: 'main',
             title: '入口处',
             image:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/灵洲村/main-title.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/灵洲村/main-title.jpg',
             description:
               '清远市石角镇灵洲村山苏种植基地，占地约120亩，带动周边60余户农户的就业，是清远市石角镇乡村振兴的示范基地。',
             panorama:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/灵洲村/main.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/灵洲村/main.jpg',
             infospots: [
               {
                 type: 'pano',
@@ -78,20 +78,20 @@ Page({
             name: 'jiedaishi1',
             title: '蓄水池（暂时关闭）',
             image:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/xushuichi-title.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/xushuichi-title.jpg',
             description: '用于接待客人，洽谈业务',
             panorama:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/灵洲村/jiedai.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/灵洲村/jiedai.jpg',
             infospots: [],
           },
           {
             name: 'zhongzhidi',
             title: '种植地',
             image:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/灵洲村/zhongzhidi-title.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/灵洲村/zhongzhidi-title.jpg',
             description: '山苏的种植场所',
             panorama:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/灵洲村/zhongzhidi.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/灵洲村/zhongzhidi.jpg',
             infospots: [
               {
                 type: 'pano',
@@ -107,10 +107,10 @@ Page({
             name: 'lengku2',
             title: '打包冷库',
             image:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/灵洲村/lengku2-title.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/灵洲村/lengku2-title.jpg',
             description: '用于存储泡沫箱和山苏的打包发货',
             panorama:
-              '	cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/灵洲村/lengku2.jpg',
+              '	https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/灵洲村/lengku2.jpg',
             infospots: [
               {
                 type: 'pano',
@@ -126,10 +126,10 @@ Page({
             name: 'lengku',
             title: '存储冷库',
             image:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/灵洲村/lengku-title.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/灵洲村/lengku-title.jpg',
             description: '用于存储泡沫箱和山苏的打包发货',
             panorama:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/灵洲村/lengku.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/灵洲村/lengku.jpg',
             infospots: [
               {
                 type: 'pano',
@@ -145,10 +145,10 @@ Page({
             name: 'feiliaojian',
             title: '肥料间',
             image:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/灵洲村/feiliaojian-title.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/灵洲村/feiliaojian-title.jpg',
             description: '用于发酵和存储肥料',
             panorama:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/灵洲村/feiliaojian.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/灵洲村/feiliaojian.jpg',
             infospots: [
               {
                 type: 'pano',
@@ -164,10 +164,10 @@ Page({
             name: 'jiedaishi',
             title: '接待室',
             image:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/灵洲村/jiedai-title.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/灵洲村/jiedai-title.jpg',
             description: '用于接待客人，洽谈业务',
             panorama:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/灵洲村/jiedai.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/灵洲村/jiedai.jpg',
             infospots: [
               {
                 type: 'pano',
@@ -187,9 +187,9 @@ Page({
             name: 'main',
             title: '入口处',
             image:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/大唐/main-title.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/大唐/main-title.jpg',
             description: '佛山市三水区育苗基地，现存30万+颗苗，总投资400万+',
-            panorama: 'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/大唐/main.jpg',
+            panorama: 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/大唐/main.jpg',
             infospots: [
               {
                 type: 'pano',
@@ -213,19 +213,19 @@ Page({
             name: 'xushuichi',
             title: '蓄水池（暂时关闭）',
             image:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/xushuichi-title.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/xushuichi-title.jpg',
             description: '存放母株的区域，母株指20年以上的山苏。',
             panorama:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/大唐/yumiao.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/大唐/yumiao.jpg',
             infospots: [],
           },
           {
             name: 'muzhu',
             title: '母株区',
             image:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/大唐/muzhu-title.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/大唐/muzhu-title.jpg',
             description: '存放母株的区域，母株指20年以上的山苏。',
-            panorama: 'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/大唐/muzhu.jpg',
+            panorama: 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/大唐/muzhu.jpg',
             infospots: [
               {
                 type: 'pano',
@@ -241,10 +241,10 @@ Page({
             name: 'yumiao',
             title: '育苗区',
             image:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/大唐/yumiao-title.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/大唐/yumiao-title.jpg',
             description: '培育山苏苗的区域。',
             panorama:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/大唐/yumiao.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/大唐/yumiao.jpg',
             infospots: [
               {
                 type: 'pano',
@@ -264,9 +264,9 @@ Page({
             name: 'main',
             title: '入口处',
             image:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/石歧/main-title.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/石歧/main-title.jpg',
             description: '全国大陆内地第一个山苏基地',
-            panorama: 'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/石歧/main.jpg',
+            panorama: 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/石歧/main.jpg',
             infospots: [
               {
                 type: 'pano',
@@ -282,18 +282,18 @@ Page({
             name: 'xushuichi',
             title: '蓄水池（暂时关闭）',
             image:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/xushuichi-title.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/xushuichi-title.jpg',
             description: '存放母株的区域，母株指20年以上的山苏。',
-            panorama: 'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/石歧/muzhu.jpg',
+            panorama: 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/石歧/muzhu.jpg',
             infospots: [],
           },
           {
             name: 'muzhu',
             title: '母株区',
             image:
-              'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/石歧/muzhu-title.jpg',
+              'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/石歧/muzhu-title.jpg',
             description: '存放母株的区域，母株指20年以上的山苏。',
-            panorama: 'cloud://cloud1-0gys80m48da147a1.636c-cloud1-0gys80m48da147a1-1304271127/image/vr/石歧/muzhu.jpg',
+            panorama: 'https://shansu-1304271127.cos.ap-guangzhou.myqcloud.com/image/vr/石歧/muzhu.jpg',
             infospots: [
               {
                 type: 'pano',
@@ -316,35 +316,22 @@ Page({
         sceneList: currentLocation.scenes,
       });
 
-      // 获取全景图URL
-      const fileList = currentLocation.scenes.map((scene) => scene.panorama);
+      const panoConfig = {
+        panolist: currentLocation.scenes.map((scene) => ({
+          name: scene.name,
+          src: scene.panorama.trim(),
+          infospots: scene.infospots,
+        })),
+        request: wx.request,
+        loader: 'GLLoader',
+        entryname: currentLocation.scenes[0].name,
+      };
 
-      // 获取云文件URL
-      wx.cloud.getTempFileURL({
-        fileList: fileList,
-        success: (res) => {
-          const panoConfig = {
-            panolist: currentLocation.scenes.map((scene, index) => ({
-              name: scene.name,
-              src: res.fileList[index].tempFileURL,
-              infospots: scene.infospots,
-            })),
-            request: wx.request,
-            loader: 'GLLoader',
-            entryname: currentLocation.scenes[0].name,
-          };
-
-          this.setData({
-            panolist: panoConfig.panolist,
-            autoinit: true,
-          });
-          wxPano.config(panoConfig);
-        },
-        fail: (err) => {
-          console.error('获取云文件URL失败：', err);
-          this.setData({ isLoading: false });
-        },
+      this.setData({
+        panolist: panoConfig.panolist,
+        autoinit: true,
       });
+      wxPano.config(panoConfig);
     }
 
     wxPano.onReady = () => {
