@@ -166,27 +166,6 @@ Component({
       });
     },
 
-    copyWechat(e) {
-      const wechat = e.currentTarget.dataset.wechat;
-
-      wx.setClipboardData({
-        data: wechat,
-        success: () => {
-          wx.showModal({
-            title: '添加联系人',
-            content: '微信号已复制，请打开微信添加好友',
-            showCancel: false,
-            confirmText: '确定',
-            success: () => {
-              this.setData({
-                showCardModal: false,
-              });
-            },
-          });
-        },
-      });
-    },
-
     selectScene(e) {
       const scene = e.currentTarget.dataset.scene;
       if (!scene || !scene.panorama) {

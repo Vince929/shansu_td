@@ -58,9 +58,6 @@
             <view class="contact-wechat text-ellipsis">微信：{{item.wechat}}</view>
           </view>
         </view>
-        <view class="contact-actions-bottom">
-          <t-button bindtap="copyWechat" data-wechat="{{item.wechat}}" size="small" theme="primary" block>添加微信</t-button>
-        </view>
       </view>
     </view>
   </view>
